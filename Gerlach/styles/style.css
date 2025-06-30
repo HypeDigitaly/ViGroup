@@ -1,5 +1,14 @@
-.vfrc-launcher, .vfrc-launcher svg {
+.vfrc-launcher {
     width: 50px !important;
     height: 50px !important;
+    border-radius: 50% !important;
     background-color: transparent !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.vfrc-launcher img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
 }
