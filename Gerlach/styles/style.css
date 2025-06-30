@@ -2,13 +2,24 @@
     width: 50px !important;
     height: 50px !important;
     border-radius: 50% !important;
+    background: none !important;
     background-color: transparent !important;
     padding: 0 !important;
-    overflow: hidden;
+    overflow: hidden !important;
+    border: none !important;
 }
 
-.vfrc-launcher img {
-    width: 100% !important;
-    height: 100% !important;
+.vfrc-launcher img,
+.vfrc-launcher svg {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
     object-fit: cover !important;
+    display: block !important;
+}
+
+/* Skrytí zeleného pozadí */
+.vfrc-launcher::before,
+.vfrc-launcher::after {
+    display: none !important;
 }
